@@ -11,9 +11,11 @@ main {
 }
 
 header {
-    background-color: darkred
+    background-color: darkred;
+    height: 75px;
 }
 
 footer {
-    background-color: lavender
+    background-color: lavender;
+    height: 75px;
 }
