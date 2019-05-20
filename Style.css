@@ -1,0 +1,19 @@
+body {
+    height: 100vh;
+}
+
+nav {
+    background-color: blueviolet;
+}
+
+main {
+    background-color: chartreuse;
+}
+
+header {
+    background-color: darkred
+}
+
+footer {
+    background-color: lavender
+}
