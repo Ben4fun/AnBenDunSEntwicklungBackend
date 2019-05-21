@@ -1,21 +1,36 @@
 body {
     height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 nav {
     background-color: blueviolet;
+    transition: top 0.3s;
+    margin: 0;
+    padding: 0;
 }
 
 main {
     background-color: chartreuse;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    padding: 0;
 }
 
 header {
     background-color: darkred;
     height: 75px;
+    margin: 0;
+    padding: 0;
 }
 
 footer {
     background-color: lavender;
     height: 75px;
+    margin: 0;
+    padding: 0;
 }
