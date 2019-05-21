@@ -10,6 +10,14 @@ nav {
     padding: 0!important;
 }
 
+nav img {
+    height: 64px;
+    width: 64px;
+    margin: auto;
+    margin-top: 50px;
+    display: block;
+}
+
 main {
     background-color: chartreuse;
     margin: 0!important;
