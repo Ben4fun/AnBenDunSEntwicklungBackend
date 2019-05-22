@@ -1,0 +1,37 @@
+https://getbootstrap.com/docs/4.0/components/buttons/
+
+Radio buttons
+Mehrer Buttons und unter jedem ein Spezifischer Text der sich dadurch öffnet
+
+---------------
+
+https://getbootstrap.com/docs/4.0/components/card/
+
+Cards
+
+Images, List groups, Header and footer, Navigation(anstatt der Radio Buttons)
+
+---------------
+
+https://getbootstrap.com/docs/4.0/components/carousel/
+
+Carousel
+
+Isn Slider
+
+---------------
+
+https://getbootstrap.com/docs/4.0/components/collapse/
+
+Collapse
+
+Button/Text der Kontent öffnet
+
+---------------
+
+https://getbootstrap.com/docs/4.0/components/jumbotron/
+
+Jumbotron
+
+Herausstechender Text. Kann vlt für den Anfang eines neuen Themas benutzt werden
+
