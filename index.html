@@ -10,36 +10,46 @@
 
 </head>
 <body class="row">
-    <nav class="col-2 fixed-top h-100">
-        <img src="allgemein.svg" alt="how about fuck you" >
-        <img src="schnittstelle.svg" alt="schnettstelle" >
-        <img src="python.svg" alt="ihh ne schlange" >
+    <nav class="col-1 fixed-top h-100">
+        <a href="#Allgemein" class="active"><img src="allgemein.svg" alt="Allgemein" ></a>
+        <a href="#Interface"><img src="schnittstelle.svg" alt="Schnitstellen" ></a>
+        <a href="#Example"><img src="python.svg" alt="Beispiel" ></a>
     </nav>
-    <div class="main-container col-10 offset-2">
+    <div class="main-container col-11 offset-1">
         <header class="row">
 
         </header>
         <main class="row">
-            <div class="row col-12">
+            <section id="Allgemein" class="row col-12">
                 fat sucker
-            </div>
-            
-            <div class="row col-12">
+            </section>
+
+            <section id="Interface" class="row col-12">
                 ma niffa
-            </div>
-            
-            <div class="row col-12">
+            </section>
+
+            <section id="Example" class="row col-12">
                 bitches get stiffa<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>koks<br><br><br><br>
-            </div>
+            </section>
 
         </main>
         <footer class="row">
 
         </footer>
     </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        document.querySelector('nav').addEventListener('click', evt => {
+            if(evt.target.tagName === 'IMG' || evt.target.tagName === 'A') {
+                if(!evt.target.closest('a').classList.contains('active')) {
+                    document.querySelector('.active').classList.remove('active');
+                    evt.target.closest('a').classList.add('active');
+                }
+            }
+        })
+    </script>
 </body>
 </html>
