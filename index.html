@@ -10,12 +10,13 @@
     <a name="top"></a>
 </head>
 <body class="row">
-    <nav class="col-1 fixed-top h-100">
+    <nav id="nav" class="col-2 col-md-1 fixed-top">
+        <img class="hamburger" src="https://img.icons8.com/ios/50/000000/menu.png">
         <a href="#Allgemein" class="active"><img src="allgemein.svg" alt="Allgemein" ></a>
         <a href="#Interface"><img src="schnittstelle.svg" alt="Schnitstellen" ></a>
         <a href="#Example"><img src="python.svg" alt="Beispiel" ></a>
     </nav>
-    <div class="main-container col-11 offset-1">
+    <div class="main-container col-12 col-md-11 offset-md-1">
         <header class="row">
 
         </header>
@@ -37,17 +38,28 @@
             <div>Dustin hate Counter: 2</div>
         </footer>
     </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
         document.querySelector('nav').addEventListener('click', evt => {
-            if(evt.target.tagName === 'IMG' || evt.target.tagName === 'A') {
+            if((evt.target.tagName === 'IMG' || evt.target.tagName === 'A') && !evt.target.classList.contains('hamburger')) {
                 if(!evt.target.closest('a').classList.contains('active')) {
                     document.querySelector('.active').classList.remove('active');
                     evt.target.closest('a').classList.add('active');
+                    document.querySelector('#nav').classList.remove('active-menue');
                 }
+            }
+        })
+
+        document.querySelector('.hamburger').addEventListener('click', evt => {
+            document.querySelector('#nav').classList.toggle('active-menue');
+        })
+
+        document.body.addEventListener('click', evt => {
+            if(!evt.target.classList.contains('hamburger')) {
+                document.querySelector('#nav').classList.remove('active-menue');
             }
         })
     </script>
