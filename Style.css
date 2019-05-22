@@ -23,6 +23,10 @@ nav a img {
     transition: 0.5s;
 }
 
+nav a img:hover {
+    opacity: 1;
+}
+
 .active img {
     opacity: 1;
 }
