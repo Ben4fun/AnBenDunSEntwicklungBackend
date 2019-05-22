@@ -56,6 +56,14 @@ footer {
     padding: 0;
 }
 
+.back-to-top {
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    margin-bottom: 5px;
+    display: block;
+}
+
 .hamburger {
     margin-top: 12.5px;
     display: none;
