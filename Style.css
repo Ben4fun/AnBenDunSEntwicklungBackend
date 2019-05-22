@@ -15,7 +15,7 @@ nav img {
     height: 50px;
     width: 50px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 160px;
     display: block;
 }
 
@@ -56,7 +56,7 @@ footer {
     padding: 0;
 }
 
-.back-to-top {
+.back-to-top img {
     height: 50px;
     width: 50px;
     margin: auto;
