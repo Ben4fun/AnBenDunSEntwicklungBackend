@@ -25,8 +25,15 @@ const header = document.querySelector('header');
 const main = document.querySelector('main');
 const headLines = document.querySelectorAll('main h2');
 const headerHeadline = header.querySelector('h1');
-const backToTop = document.querySelector('.back-to-top');
 
+const backToTop = document.createElement('a');
+const imgBackToTopButton = document.createElement('img');    
+imgBackToTopButton.setAttribute('src','uparrow.svg');
+imgBackToTopButton.setAttribute('alt','Back to top');
+backToTop.setAttribute('class','back-to-top fixed-bottom');           
+backToTop.setAttribute('href','#top');
+backToTop.appendChild(imgBackToTopButton);
+ 
 
 // Loop to handle scroll changes
 const scrollHandler = () => {
