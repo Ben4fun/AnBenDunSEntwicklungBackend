@@ -15,7 +15,7 @@ nav img {
     height: 50px;
     width: 50px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 160px;
     display: block;
 }
 
@@ -78,6 +78,14 @@ footer {
     height: 75px;
     margin: 0!important;
     padding: 0;
+}
+
+.back-to-top img {
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    margin-bottom: 5px;
+    display: block;
 }
 
 .hamburger {
