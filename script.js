@@ -25,6 +25,8 @@ const header = document.querySelector('header');
 const main = document.querySelector('main');
 const headLines = document.querySelectorAll('main h2');
 const headerHeadline = header.querySelector('h1');
+const backToTop = document.querySelector('.back-to-top');
+
 
 // Loop to handle scroll changes
 const scrollHandler = () => {
@@ -36,6 +38,14 @@ const scrollHandler = () => {
         header.classList.remove('scrolled');
         main.classList.remove('scrolled');
     }
+
+    const da = document.querySelector('.back-to-top');
+    if(window.pageYOffset >= 40 && !da) {
+        document.body.appendChild(backToTop);
+    } else if (window.pageYOffset < 40 && da){
+        backToTop.remove();
+    }
+    
 
     const selectedObj = {
         elementTxt: 'Backend',
