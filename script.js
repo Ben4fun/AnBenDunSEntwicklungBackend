@@ -39,7 +39,7 @@ const scrollHandler = () => {
 
     for (let element of headLines) {
         let elementTopOffset = element.offsetParent.offsetTop-window.pageYOffset;
-        if (elementTopOffset < 0) {
+        if (elementTopOffset-10 < 0) {
             elementTopOffset = parseInt(elementTopOffset);
             if (!selectedObj.value || selectedObj.value < elementTopOffset) {
                 selectedObj.elementTxt = element.textContent;
