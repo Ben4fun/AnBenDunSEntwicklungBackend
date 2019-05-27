@@ -28,7 +28,7 @@ const headerHeadline = header.querySelector('h1');
 
 const backToTop = document.createElement('a');
 const imgBackToTopButton = document.createElement('img');
-imgBackToTopButton.setAttribute('src','uparrow.svg');
+imgBackToTopButton.setAttribute('src','img/uparrow.svg');
 imgBackToTopButton.setAttribute('alt','Back to top');
 backToTop.setAttribute('class','back-to-top fixed-bottom');           
 backToTop.setAttribute('href','#top');

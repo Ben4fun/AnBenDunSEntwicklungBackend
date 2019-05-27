@@ -12,9 +12,9 @@
 <body class="row">
     <nav id="nav" class="col-2 col-md-1 fixed-top">
         <img class="hamburger" src="https://img.icons8.com/ios/50/000000/menu.png">
-        <a href="#Allgemein" class="active"><img src="allgemein.svg" alt="Allgemein" ></a>
-        <a href="#Interface"><img src="schnittstelle.svg" alt="Schnitstellen" ></a>
-        <a href="#Example"><img src="python.svg" alt="Beispiel" ></a>
+        <a href="#Allgemein" class="active"><img src="img/allgemein.svg" alt="Allgemein" ></a>
+        <a href="#Interface"><img src="img/schnittstelle.svg" alt="Schnitstellen" ></a>
+        <a href="#Example"><img src="img/python.svg" alt="Beispiel" ></a>
     </nav>
     <div class="main-container col-12 col-md-11 offset-md-1">
         <header class="row">
@@ -23,15 +23,108 @@
         <main class="row">
             <section id="Allgemein" class="row col-12">
                 <h2 class="col-12">Allemein</h2>
-                fat sucker
+                <div class="col-12 d-flex flex-wrap justify-content-around">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section id="Interface" class="row col-12">
                 <h2 class="col-12">Schnittstellen</h2>
-                ma niffa
+                <div class="col-12" id="schnitstellen">
+                    <p class="text-center">
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#rest" aria-expanded="false" aria-controls="rest">
+                            Rest API
+                        </button>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#websockets" aria-expanded="false" aria-controls="websockets">
+                            Web Sockets
+                        </button>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#graphql" aria-expanded="false" aria-controls="graphql">
+                            GraphQL
+                        </button>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#andere" aria-expanded="false" aria-controls="andere">
+                            Andere
+                        </button>
+                    </p>
+                    <div class="collapse" id="rest" data-parent="#schnitstellen">
+                        <div class="card card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        </div>
+                    </div>
+                    <div class="collapse" id="websockets" data-parent="#schnitstellen">
+                        <div class="card card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        </div>
+                    </div>
+                    <div class="collapse" id="graphql" data-parent="#schnitstellen">
+                        <div class="card card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        </div>
+                    </div>
+                    <div class="collapse" id="andere" data-parent="#schnitstellen">
+                        <div class="card card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        </div>
+                    </div>
+                </div>
             </section>
             <section id="Example" class="row col-12">
                 <h2 class="col-12">Beispiel</h2>
-                bitches get stiffa<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>koks<br><br><br><br>
+                <h4 class="col-12">Beliebte Backend Sprachen</h4>
+                <ul class="list-unstyled col-12">
+                    <li class="media">
+                        <img src="img/python.svg" class="mr-3" alt="Python">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Python</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </div>
+                    </li>
+                    <li class="media my-4">
+                        <img src="img/java-icon.png" class="mr-3" alt="Java">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Java</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </div>
+                    </li>
+                    <li class="media my-4">
+                        <img src="img/nodejslogo.png" class="mr-3" alt="NodeJS">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">NodeJS</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </div>
+                    </li>
+                    <li class="media">
+                        <img src="img/php.png" class="mr-3" alt="PHP">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">PHP</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </div>
+                    </li>
+                </ul>
             </section>
 
         </main>
