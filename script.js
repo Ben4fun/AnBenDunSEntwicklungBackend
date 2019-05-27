@@ -7,19 +7,19 @@ document.querySelector('nav').addEventListener('click', evt => {
             document.querySelector('#nav').classList.remove('active-menue');
         }
     }
-})
+});
 
 // Handler to open the hamburger menue
 document.querySelector('.hamburger').addEventListener('click', evt => {
     document.querySelector('#nav').classList.toggle('active-menue');
-})
+});
 
 // Handler to close the hamburger menue when clickin anywhere else
 document.body.addEventListener('click', evt => {
     if(!evt.target.classList.contains('hamburger')) {
         document.querySelector('#nav').classList.remove('active-menue');
     }
-})
+});
 
 const header = document.querySelector('header');
 const main = document.querySelector('main');
@@ -27,7 +27,7 @@ const headLines = document.querySelectorAll('main h2');
 const headerHeadline = header.querySelector('h1');
 
 const backToTop = document.createElement('a');
-const imgBackToTopButton = document.createElement('img');    
+const imgBackToTopButton = document.createElement('img');
 imgBackToTopButton.setAttribute('src','uparrow.svg');
 imgBackToTopButton.setAttribute('alt','Back to top');
 backToTop.setAttribute('class','back-to-top fixed-bottom');           
@@ -78,11 +78,21 @@ const scrollHandler = () => {
         }
     }
 
-    if (headerHeadline.textContent != selectedObj.elementTxt) {
+    if (headerHeadline.textContent !== selectedObj.elementTxt) {
         headerHeadline.textContent = selectedObj.elementTxt;
     }
 
+    // Gradient calculation for the header. Should be in a seperate function but I am lazy af
+    const gradientPercent = ((document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 100);
+    // Calculate the delta between the two rgb values by scroll position, currently hard coded
+    const r = (138 - 95) * (gradientPercent/100);
+    const g = (43 - 176) * (gradientPercent/100);
+    const b = (226 - 183) * (gradientPercent/100);
+
+    //header.style.backgroundImage = `linear-gradient(to right, #8A2BE2 rgb(138, 43, 226), #5FB0B7 ${((100-gradientPercent) >= 40 ? 100-gradientPercent : 40)}%)`;
+    header.style.backgroundImage = `linear-gradient(to right, rgb(138, 43, 226) 20%, rgb(${138 - r}, ${43 - g}, ${226 - b}) 40%)`;
+
     window.requestAnimationFrame(scrollHandler);
-}
+};
 
 window.requestAnimationFrame(scrollHandler);
