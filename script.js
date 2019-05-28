@@ -30,10 +30,10 @@ const backToTop = document.createElement('a');
 const imgBackToTopButton = document.createElement('img');
 imgBackToTopButton.setAttribute('src','img/uparrow.svg');
 imgBackToTopButton.setAttribute('alt','Back to top');
-backToTop.setAttribute('class','back-to-top fixed-bottom');           
+backToTop.setAttribute('class','back-to-top fixed-bottom');
 backToTop.setAttribute('href','#top');
 backToTop.appendChild(imgBackToTopButton);
- 
+
 
 // Loop to handle scroll changes
 const scrollHandler = () => {
@@ -52,7 +52,7 @@ const scrollHandler = () => {
     } else if (window.pageYOffset < 40 && da){
         backToTop.remove();
     }
-    
+
 
     const selectedObj = {
         elementTxt: 'Backend',

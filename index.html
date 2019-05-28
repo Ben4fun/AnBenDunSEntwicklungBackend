@@ -130,7 +130,7 @@
                     <div class="collapse" id="rest" data-parent="#schnitstellen">
                         <div class="card card-body">
                             REST steht für Representational State Transfer. Für REST wird eine strikte Client - Server Trennung vorrausgesetzt. Das bedeutet es gibt immer einen Client der per Schnittstelle Daten vom Server abfragt. Wichtig ist dabei vor allem dass alle Anfragen alle notwendigen daten mitliefern um die Anfragen zu bearbeiten.
-                            
+
                         </div>
                     </div>
                     <div class="collapse" id="websockets" data-parent="#schnitstellen">
@@ -152,6 +152,13 @@
             </section>
             <section id="Example" class="row col-12">
                 <h2 class="col-12">Beispiel</h2>
+                <div class="col-12 wrapper">
+                  <div id="editor">function foo(items) {
+                    var x = "All this is syntax highlighted";
+                    return x;
+                    }
+                  </div>
+                </div>
             </section>
 
         </main>
@@ -164,5 +171,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="ace/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/monokai");
+        editor.session.setMode("ace/mode/javascript");
+    </script>
 </body>
 </html>

@@ -113,6 +113,18 @@ main .start-img {
     opacity: 0.8;
 }
 
+#Example .wrapper {
+  height: 500px;
+}
+
+#editor {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+}
+
 .main-container {
     padding: 0;
 }
