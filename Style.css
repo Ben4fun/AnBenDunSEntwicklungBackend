@@ -95,6 +95,7 @@ main .start-img {
 .what-is-container img {
     pointer-events: auto;
     transition: 1s;
+    max-width: 50%;
 }
 
 /* Hacky Blur Hover animation*/
