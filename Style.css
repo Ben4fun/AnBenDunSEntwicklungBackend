@@ -20,8 +20,12 @@ nav img {
     height: 50px;
     width: 50px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 10vh;
     display: block;
+}
+
+nav a:nth-child(2) img {
+    margin-top: 15vh!important;
 }
 
 nav a img {
