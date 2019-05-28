@@ -90,7 +90,7 @@ const scrollHandler = () => {
     const b = (226 - 183) * (gradientPercent/100);
 
     //header.style.backgroundImage = `linear-gradient(to right, #8A2BE2 rgb(138, 43, 226), #5FB0B7 ${((100-gradientPercent) >= 40 ? 100-gradientPercent : 40)}%)`;
-    header.style.backgroundImage = `linear-gradient(to right, rgb(138, 43, 226) 20%, rgb(${138 - r}, ${43 - g}, ${226 - b}) 40%)`;
+    header.style.backgroundImage = `linear-gradient(60deg, rgb(138, 43, 226) 20%, rgb(${138 - r}, ${43 - g}, ${226 - b}) 55%)`;
 
     window.requestAnimationFrame(scrollHandler);
 };

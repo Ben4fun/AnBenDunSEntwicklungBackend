@@ -22,36 +22,93 @@
         </header>
         <main class="row">
             <section id="Allgemein" class="row col-12">
-                <h2 class="col-12">Allemein</h2>
+                <h2 class="col-12">Allgemein</h2>
+                <div class="col-12 col-md-10 start-img-container">
+                    <img src="img/backend.png" alt="What is Backend" class="start-img">
+                </div>
+                <p class="col-12" style="text-align: center;">Was genau bezeichnet man als Backend? Was umfasst das Backend? Und was genau macht ein Backend Entwickler?
+                    Das und mehr erfahrt ihr auf unserer Website!</p>
                 <div class="col-12 d-flex flex-wrap justify-content-around">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 18rem; margin-bottom: 10px;">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                            <h5 class="card-title">Backend</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Was ist das?</h6>
+                            <p class="card-text">Der Begriff Backend beschreibt in der Regel den teil der Applikation mit dem der User nicht in Verbindung kommt.
+                                In der Web Entiwcklung zum beispiel handelt es häufig um die Serverseitige logik.</p>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 18rem; margin-bottom: 10px;">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                            <h5 class="card-title">Welche Sprachen werden in der Backend Entwicklung verwendet?</h5>
+                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                            <p class="card-text">Viele verschiedene Sprachen werden in der Backend Entwicklung verwendet. Je nach Anwednungsfall eignen sich einige Sprachen besser als andere.</p>
+                            <a href="#Example" class="card-link w-100">Ein Beispiel für ein Python Backend!</a href>
+                            <a href="#sprachen" class="card-link w-100">Beliebte sprachen</a>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 18rem; margin-bottom: 10px;">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                            <h5 class="card-title">Und was ist ein Frontend?</h5>
+                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                            <p class="card-text">Die andere seite einer Software oder Applikation, die mit welcher der User interagiert, nennt man Frontend. Das Frontend kann dabei direkt mit dem Backend Verbunden sein,
+                                wie zum beispiel beim Server Sided Rendering, oder es kann mit einer Schittstelle (API) mit dem Backend verbunden werden. Wir werden uns hier eher mit letzterer Variante auseinander setzen.</p>
                         </div>
                     </div>
                 </div>
+                <h4 class="col-12">Frontend Vs Backend</h4>
+                <p class="col-12" style="text-align: center;">Fahre mit der Maus über die bilder um die Unterschiede zu erfahren!</p> <!-- IMPORTANT! TODO: Make the content accesable on mobile. JavaScript anyone? -->
+                <div class="col-12 col-md-10 start-img-container what-is-container">
+                    <img src="img/backend-frontend-part1.png" alt="What is Backend" class="start-img backend" style="margin-right: 0!important;">
+                    <img src="img/backend-frontend-part2.png" alt="What is Backend" class="start-img frontend" style="margin-left: 0!important;">
+                    <div class="frontend-backend">
+                        <div class="backend-only">
+                            <h5>Backend</h5>
+                            <p>Das Backend ist zuständig für die Datenverarbeitung und die Datenverwaltung. Es werden diverse logische Operationen durchgeführt und Daten in Datenbanken oder im Filesystem gespeichert und abgerufen.
+                            Häufig ist ein Backend über eine API mit dem Frontend verbunden.</p>
+                        </div>
+                        <div class="frontend-only">
+                            <h5>Frontend</h5>
+                            <p>Das Frontend ist der Teil der Seite mit der der User Interagiert. Ein ansprechendes Design und eine leichte Zugänglichkeit sind wichtig.
+                            Im Frontend kann zwar auch viel Logik existieren, aber allgemein ist das Frontend zur Anzeige von Daten gedacht.</p>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="col-12">Beliebte Backend Sprachen</h4>
+                <ul class="list-unstyled col-12 d-flex flex-wrap" id="sprachen">
+                    <li class="media col-md-6">
+                        <img src="img/python.svg" class="mr-3" alt="Python">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Python</h5>
+                            Python ist eine Sprache welche bekannt dafür ist keine klammern, sondern Einrückung zu verwenden. Eine der großen Stärken welche Python vorweisen kann ist die Datenverarbeitung und Datenvisualisierung.
+                            Eine der größten schwächen ist die Performance. Python gehört zu den langsameren Sprachen für sich genommen.
+                        </div>
+                    </li>
+                    <li class="media my-4 col-md-6">
+                        <img src="img/java-icon.png" class="mr-3" alt="Java">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Java</h5>
+                            Java ist eine weit verbreitete Sprache, welche gerne als beispiel für Objekt Orientierte Programmierung genommen wird. Java wird für die Entwicklung diverser Software Anwendungen und Applikationen verwendetn.
+                            Der Vorteil den Java mit sich bringt ist dass Java dank der Java virtual machine, welche den code ausführt, auf allen gänginen Betriebssystemen lauffähig ist. Außerdem macht die relativ strikte struktur die Sprache zu einer perfekten Alternative für Anfänger.
+                        </div>
+                    </li>
+                    <li class="media my-4 col-md-6">
+                        <img src="img/nodejslogo.png" class="mr-3" alt="NodeJS">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">NodeJS</h5>
+                            NodeJS ist eigentlich keine Sprache, sondern eine Runtime Environment. NodeJS erlaubt die Backend programmierung in JavaScript. Das ist einer der Gründe wieos NodeJS unter Web Entwicklern so beliebt ist, da im Frontend und Backend die selbe Sprache verwendet werden kann.
+                            Außerdem macht die Non-Blocking Architektur NodeJS zu einer der schnellsten und effizientesten alternativen für I/O Anwendungen. Rechenintensive Aufgaben jedoch können in NodeJS vergleichsweise lange brauchen.
+                        </div>
+                    </li>
+                    <li class="media col-md-6">
+                        <img src="img/php.png" class="mr-3" alt="PHP">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">PHP</h5>
+                            Bei PHP handelt es sich um die klassischen Backend Sprache für das Web. Die urpsrüngliche PHP Syntax basiert auf C, hat sich jedoch über die Jahre starkt verändert. Deshalb wird PHP auch als eher unschöne Sprache Wahrgenommen.
+                            Weil PHP 5 mittlerweile so alt und Langsam war, und PHP 6 ein debakel war lange die Rede davon dass PHP in Zukunft komplett abgelöst werden wird. PHP 7 jedoch kann durch hohe Geschwindigkeit und stabilität überzeugen. PHP ist eine der schnellsten Backend Sprachen wenn es
+                            um den Zugriff auf SQL server geht.
+                        </div>
+                    </li>
+                </ul>
             </section>
             <section id="Interface" class="row col-12">
                 <h2 class="col-12">Schnittstellen</h2>
@@ -94,37 +151,6 @@
             </section>
             <section id="Example" class="row col-12">
                 <h2 class="col-12">Beispiel</h2>
-                <h4 class="col-12">Beliebte Backend Sprachen</h4>
-                <ul class="list-unstyled col-12">
-                    <li class="media">
-                        <img src="img/python.svg" class="mr-3" alt="Python">
-                        <div class="media-body">
-                            <h5 class="mt-0 mb-1">Python</h5>
-                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                        </div>
-                    </li>
-                    <li class="media my-4">
-                        <img src="img/java-icon.png" class="mr-3" alt="Java">
-                        <div class="media-body">
-                            <h5 class="mt-0 mb-1">Java</h5>
-                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                        </div>
-                    </li>
-                    <li class="media my-4">
-                        <img src="img/nodejslogo.png" class="mr-3" alt="NodeJS">
-                        <div class="media-body">
-                            <h5 class="mt-0 mb-1">NodeJS</h5>
-                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                        </div>
-                    </li>
-                    <li class="media">
-                        <img src="img/php.png" class="mr-3" alt="PHP">
-                        <div class="media-body">
-                            <h5 class="mt-0 mb-1">PHP</h5>
-                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                        </div>
-                    </li>
-                </ul>
             </section>
 
         </main>
