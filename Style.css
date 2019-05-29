@@ -117,12 +117,16 @@ main .start-img {
   height: 500px;
 }
 
-#editor {
+.editor {
     position: absolute;
     top: 20px;
     right: 20px;
     bottom: 20px;
     left: 20px;
+}
+
+.code-wrapper {
+    height: 450px;
 }
 
 .main-container {
