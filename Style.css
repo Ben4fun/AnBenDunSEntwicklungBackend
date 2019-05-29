@@ -114,7 +114,12 @@ main .start-img {
 }
 
 #Example .wrapper {
-  height: 500px;
+  height: 0;
+  transition: 1s ease-in-out!important;
+}
+
+#Example .wrapper.show {
+    height: 500px;
 }
 
 .editor {
