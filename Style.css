@@ -2,6 +2,7 @@ body {
     height: 100vh;
     margin: 0!important;
     padding: 0;
+    background-color: #E7ECEF;
 }
 
 section {
@@ -175,19 +176,28 @@ section>h2, section>h3, section>h4 {
     display: inline;
     padding: 20px;
     margin: 5px;
-    
+
 }
 
 .buttonBox {
     width: 100%;
-    
+
 }
 
 footer {
-    background-color: lavender;
+    background-color: #E7ECEF;
     height: 75px;
     margin: 0!important;
     padding: 0;
+    display: flex;
+    justify-content: left;
+    padding: 50px;
+}
+
+.copyright {
+  flex-grow: 1;
+  text-align: center;
+  line-height: 500%;
 }
 
 .back-to-top {
@@ -261,4 +271,3 @@ footer {
 .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(196,141,247,.5)!important;
 }
-
