@@ -171,6 +171,18 @@ section>h2, section>h3, section>h4 {
     text-align: center;
 }
 
+.schnittstellenB {
+    display: inline;
+    padding: 20px;
+    margin: 5px;
+    
+}
+
+.buttonBox {
+    width: 100%;
+    
+}
+
 footer {
     background-color: lavender;
     height: 75px;
@@ -239,6 +251,11 @@ footer {
 .btn-primary {
     background-color: #af5efb!important;
     border-color: #bc75ff!important;
+}
+
+.btn-secondary {
+    background-color: #c485ff!important;
+    border-color: #c485ff!important;
 }
 
 .btn-primary:focus {
