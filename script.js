@@ -96,3 +96,7 @@ const scrollHandler = () => {
 };
 
 window.requestAnimationFrame(scrollHandler);
+
+$(function () {
+    $('[data-toggle="popover"]').popover()
+})
